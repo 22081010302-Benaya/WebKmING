@@ -2,9 +2,12 @@
     <section class="hero">
         <div class="container">
             <img src="assets/images/inggris.jpg" alt="Hero Image" class="hero-image">
-            <h1>Temukan Tempat Les Bahasa Inggris Terbaik di Kampung Inggris</h1>
-            <h2>Rekomendasi Terbaik</h2>
-            <a href="recommendations.php" class="cta">Lihat Rekomendasi</a>
+            <h1>Temukan Tempat Les Bahasa Inggris</h1>
+            <h1>Terbaik di Kampung Inggris</h1>
+            <h2>Kampung Inggris adalah cara terbaik dalam belajar bahasa.</h2>
+            <h2>Dapatkan kemerdekaan untuk membentuk masa depan yang</h2>
+            <h2>sesuai dengan aspirasi kariermu.</h2>
+            <a href="recommendations.php" class="btn">Lihat Rekomendasi</a>
         </div>
     </section>
 
@@ -27,4 +30,7 @@
             </div>
         </div>
     </section>
+
+
+    
 <?php include 'inc/footer.php'; ?>

@@ -3,23 +3,26 @@
     <div class="container">
         <h1>Tempat Les Bahasa Inggris di Kampung Inggris</h1>
         <form method="GET" action="">
-            <input type="text" name="search" placeholder="Cari kursus...">
-            <select name="rating">
-                <option value="">Semua Rating</option>
-                <option value="4.5">4.5 ke atas</option>
-                <option value="4.0">4.0 ke atas</option>
-                <option value="3.5">3.5 ke atas</option>
-            </select>
-            <select name="distance">
-                <option value="">Semua Jarak</option>
-                <option value="5">Jarak 5 ke bawah</option>
-                <option value="10">Jarak 10 ke bawah</option>
-            </select>
-            <select name="price">
-                <option value="">Semua Harga</option>
-                <option value="500000">Rp500.000 ke bawah</option>
-                <option value="1000000">Rp1.000.000 ke bawah</option>
-            </select>
+        <input type="text" name="search" placeholder="Cari kursus...">
+            <button type="button" id="filterBtn">Filter</button>
+            <div id="filterOptions" style="display: none;">
+                <select name="rating">
+                    <option value="">Semua Rating</option>
+                    <option value="4.5">4.5 ke atas</option>
+                    <option value="4.0">4.0 ke atas</option>
+                    <option value="3.5">3.5 ke atas</option>
+                </select>
+                <select name="distance">
+                    <option value="">Semua Jarak</option>
+                    <option value="5">Jarak 5 ke bawah</option>
+                    <option value="10">Jarak 10 ke bawah</option>
+                </select>
+                <select name="price">
+                    <option value="">Semua Harga</option>
+                    <option value="500000">Rp500.000 ke bawah</option>
+                    <option value="1000000">Rp1.000.000 ke bawah</option>
+                </select>
+            </div>
             <button type="submit">Cari</button>
         </form>
         <div class="course-list">
@@ -77,4 +80,16 @@
         </div>
     </div>
 </section>
+
+<script>
+    document.getElementById('filterBtn').addEventListener('click', function() {
+        var filterOptions = document.getElementById('filterOptions');
+        if (filterOptions.style.display === 'none') {
+            filterOptions.style.display = 'block';
+        } else {
+            filterOptions.style.display = 'none';
+        }
+    });
+</script>
+
 <?php include 'inc/footer.php'; ?>

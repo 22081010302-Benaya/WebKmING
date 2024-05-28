@@ -16,7 +16,7 @@ header {
     background: #8a2c2c;
     color: #fff;
     padding: 20px 0;
-    border-bottom: #7e663a 3px solid;
+    border-bottom: #521c0bd7 3px solid;
     width: 100%;
     position: fixed; /* Membuat header tetap berada di atas */
     top: 0;
@@ -53,17 +53,16 @@ header ul li a {
 
 header ul li a:hover,
 header ul li a.active {
-    text-decoration: underline;
+    text-decoration:double;
 }
     
 .hero {
-    position: relative;
+    position:relative ;
     color: #ffffff;
     padding-top: 200px;
     padding-bottom: 100px;
-    text-align: center;
-    overflow: hidden; /* Untuk memastikan gambar tidak keluar dari elemen */
-    
+    text-align:start;
+    /*overflow: hidden; /* Untuk memastikan gambar tidak keluar dari elemen */   
 }
 
 .hero .hero-image {
@@ -72,13 +71,19 @@ header ul li a.active {
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Untuk memastikan gambar menutupi seluruh elemen */
+    object-fit:cover; /* Untuk memastikan gambar menutupi seluruh elemen */
     z-index: -1; /* Untuk memastikan gambar berada di belakang teks */
 }
 
 .hero h1 {
     margin: 0;
     font-size: 50px;
+    font-weight: 500;
+}
+
+.hero h2 {
+    margin: 5px;
+    font-size: 20px;
     font-weight: 300;
 }
 
@@ -86,9 +91,9 @@ header ul li a.active {
     display: inline-block;
     text-decoration: none;
     color: #fff;
-    background: #e8491d;
+    background: #5e5a5a;
     padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 100px;
     margin-top: 20px;
 }
 
@@ -108,7 +113,7 @@ header ul li a.active {
     margin: 0 10px;
     background: #fff;
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -125,6 +130,7 @@ header ul li a.active {
 .course {
     background: #fff;
     border: 1px solid #ddd;
+    border-radius: 15px;
     padding: 20px;
     flex: 1 1 calc(33.333% - 40px);
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -140,16 +146,48 @@ header ul li a.active {
 }
 
 .about{
-    position: relative;
-    color: #000000;
-    padding-top: 200px;
+    background: #fffdf6;
+    color: #fff;
+    padding-top: 100px;
     padding-bottom: 100px;
-    text-align:left;
-    overflow: hidden; /* Untuk memastikan gambar tidak keluar dari elemen */
+    text-align: center;
+}
+
+.about .container {
+    width: 80%;
+    margin: auto;
+    color:#000000;
+    overflow: hidden;
+    text-align: center;
+}
+
+.about .about-image {
+    position:static;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+}
+
+.about h1 {
+    margin: 0;
+    font-size: 50px;
+    font-weight: 500;   
+}
+
+.about p {
+    margin: 5px;
+    font-size: 20px;
+    font-weight: 300;
 }
 
 .course-detail {
-    padding: 50px 0;
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.1);
+    margin-top: 100px;
 }
 
 .course-detail .container {
@@ -159,22 +197,24 @@ header ul li a.active {
 }
 
 .course-detail .course-image {
-    max-width: 100%;
+    max-width: 50%;
     height: auto;
     margin-bottom: 20px;
+    border-radius: 15px;
 }
 
 .btn {
     display: inline-block;
-    background: #50b3a2;
+    background: #8a2c2c;
     color: #fff;
     padding: 10px 20px;
+    border-radius: 100px;
     text-decoration: none;
     margin-top: 10px;
 }
 
 .btn:hover {
-    background: #46a094;
+    background: #362525;
 }
 
 form {
@@ -185,10 +225,13 @@ form input,
 form select {
     padding: 10px;
     margin-right: 10px;
+    border-radius: 15px;
 }
 
 form button {
     padding: 10px 20px;
+    border-radius: 15px;
+    background: #ffffff;
 }
 
 footer {
