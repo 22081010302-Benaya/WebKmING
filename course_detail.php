@@ -15,10 +15,12 @@ try {
         echo "<img src='" . htmlspecialchars($course['image']) . "' alt='" . htmlspecialchars($course['name']) . "' class='course-image'>";
         echo "<h1>" . htmlspecialchars($course['name']) . "</h1>";
         echo "<p>" . htmlspecialchars($course['description']) . "</p>";
+        echo "<p>" . htmlspecialchars($course['description_details']) . "</p>";
         echo "<p>Alamat: " . htmlspecialchars($course['address']) . "</p>";
         echo "<p>Harga per pertemuan: Rp" . number_format($course['price'], 0, ',', '.') . "</p>";
         echo "<p>Rating: " . htmlspecialchars($course['rating']) . "</p>";
         echo "<p>Jarak: " . htmlspecialchars($course['distance']) . " km</p>";
+        echo "<p>" . htmlspecialchars($course['book']) . "</p>";
         echo "<a href='contact.php?action=add&id=" . htmlspecialchars($course['id']) . "' class='btn'>Tambahkan ke Bookmark</a>";
         echo "</div>";
         echo "</section>";

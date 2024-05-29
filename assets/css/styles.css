@@ -235,9 +235,101 @@ form button {
 }
 
 footer {
-    background: #000000;
-    color: #fff;
+    background-color: #2c2f33;
+    color: #ffffff;
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+.footer-section h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.newsletter form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.newsletter input {
+    padding: 10px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    flex: 1;
+}
+
+.newsletter button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #1da1f2;
+    color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.newsletter button:hover {
+    background-color: #0d95e8;
+}
+
+.footer-bottom {
     text-align: center;
-    padding: 30px 0;
-    margin-top: 30px;
+    padding: 20px 0;
+    border-top: 1px solid #444;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+.footer-bottom a {
+    color: #1da1f2;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+.footer-nav a {
+    margin: 0 10px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
 }
