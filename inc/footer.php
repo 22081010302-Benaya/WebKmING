@@ -6,7 +6,7 @@
                 <li><a href="recommendations.php">Recommendations</a></li>
                 <li><a href="about.php">About Us</a></li>
                 <li><a href="contact.php">Contact Us</a></li>
-                <li><a href="faqs_help.php">FAQs & Help</a></li>
+                <li><a href="FAQ.php">FAQs & Help</a></li>
             </ul>
         </div>
         <div class="footer-section contact">
@@ -19,7 +19,7 @@
         </div>
         <div class="footer-section newsletter">
             <h2>Newsletter</h2>
-            <p>Jadilah yang pertama mengetahui perkembangan Kampung Inggris.</p>
+            <p>Be The First to Receive Update from Us</p>
             <form action="#" method="POST">
                 <input type="email" name="email" placeholder="Your email">
                 <button type="submit">Send</button>
